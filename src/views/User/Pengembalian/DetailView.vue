@@ -119,9 +119,10 @@ onMounted(() => {
                 <button v-if="detail.status_kembali === 'dipinjam'" @click="editPengembalian(detail.pengembalian_id, detail.status_barang)" class="btn btn-primary">
                   Edit
                 </button>
-                <button v-else @click="lihatDetail" class="btn btn-info">
+                <button v-else @click="$router.push({ name: 'pengembalian'})" class="btn btn-info">
                   Lihat Detail
                 </button>
+                
               </td>
             </tr>
           </tbody>

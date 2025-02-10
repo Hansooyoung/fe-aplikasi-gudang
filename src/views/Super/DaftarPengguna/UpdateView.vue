@@ -4,7 +4,7 @@ import { ref, onMounted } from 'vue';
 import { useRouter, useRoute } from 'vue-router';
 import DefaultCard from '@/components/Forms/DefaultCard.vue'; 
 import InputGroup from '@/components/Auths/InputGroup.vue'; 
-import DefaultLayoutAdmin from '@/layouts/DefaultLayoutAdmin.vue';
+import DefaultLayoutSuper from '@/layouts/DefaultLayoutSuper.vue';
 
 const router = useRouter();
 const route = useRoute();
@@ -68,7 +68,7 @@ const handleSubmit = async () => {
     console.log(response.data);
 
     // Redirect to the index page
-    router.push({ name: 'daftar-pengguna' });
+    router.push({ name: 'daftar-pengguna-super' });
   } catch (error) {
     if (error.response && error.response.data.errors) {
       errors.value = error.response.data.errors;
@@ -84,7 +84,7 @@ onMounted(fetchUser);
 </script>
 
 <template>
-  <DefaultLayoutAdmin>
+  <DefaultLayoutSuper>
     <div class="grid">
       <div class="flex flex-col gap-9">
         <!-- Form Start -->
@@ -157,7 +157,7 @@ onMounted(fetchUser);
         <!-- Form End -->
       </div>
     </div>
-  </DefaultLayoutAdmin>
+  </DefaultLayoutSuper>
 </template>
 
 <style scoped>

@@ -46,7 +46,7 @@ const menuGroups = ref([
         route: '#',
         children: [
           { label: 'Laporan Daftar Barang ', route: '/admin/dashboard/laporan-barang' },
-          { label: 'Laporan Pengembalian Barang', route: '/admin/dashboard/laporan-pengembalian' },
+          { label: 'Laporan Pengembalian Dan Peminjaman Barang', route: '/admin/dashboard/laporan-pengembalian' },
           { label: 'Laporan Status Barang', route: '/admin/dashboard/laporan-status' }
         ]
       },

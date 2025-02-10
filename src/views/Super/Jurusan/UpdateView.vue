@@ -62,7 +62,7 @@ const handleSubmit = async () => {
     console.log(response.data);
 
     // Redirect to the index page
-    router.push({ name: 'jurusan' });
+    router.push({ name: 'jurusan-super' });
   } catch (error) {
     // Handle validation or other errors
     if (error.response && error.response.data.errors) {

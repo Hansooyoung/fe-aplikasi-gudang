@@ -61,6 +61,13 @@ const routes = [
     meta: { role: 'admin' }
   },
   {
+    path: '/super/dashboard/jenis-barang',
+    name: 'jenis-barang-super',
+    component: () =>
+      import(/* webpackChunkName: "home" */ '../views/Super/JenisBarang/IndexView.vue'),
+    meta: { role: 'super' }
+  },
+  {
     path: '/admin/dashboard/jenis-barang/create',
     name: 'jenis-barang.create',
     component: () =>
@@ -68,10 +75,23 @@ const routes = [
     meta: { role: 'admin' }
   },
   {
+    path: '/super/dashboard/jenis-barang/create',
+    name: 'jenis-barang-super.create',
+    component: () =>
+      import(/* webpackChunkName: "home" */ '../views/Super/JenisBarang/CreateView.vue'),
+    meta: { role: 'super' }
+  },
+  {
     path: '/admin/dashboard/jenis-barang/update/:jenis_barang_kode',
     name: 'jenis-barang.update',
     component: () => import('../views/Admin/JenisBarang/UpdateView.vue'),
     meta: { role: 'admin' }
+  },
+  {
+    path: '/super/dashboard/jenis-barang/update/:jenis_barang_kode',
+    name: 'jenis-barang-super.update',
+    component: () => import('../views/Admin/JenisBarang/UpdateView.vue'),
+    meta: { role: 'super' }
   },
   {
     path: '/admin/dashboard/daftar-pengguna',
@@ -81,6 +101,13 @@ const routes = [
     meta: { role: 'admin' }
   },
   {
+    path: '/super/dashboard/daftar-pengguna',
+    name: 'daftar-pengguna-super',
+    component: () =>
+      import(/* webpackChunkName: "home" */ '../views/Super/DaftarPengguna/IndexView.vue'),
+    meta: { role: 'super' }
+  },
+  {
     path: '/admin/dashboard/daftar-pengguna/create',
     name: 'daftar-pengguna.create',
     component: () =>
@@ -88,11 +115,25 @@ const routes = [
     meta: { role: 'admin' }
   },
   {
+    path: '/super/dashboard/daftar-pengguna/create',
+    name: 'daftar-pengguna-super.create',
+    component: () =>
+      import(/* webpackChunkName: "home" */ '../views/Super/DaftarPengguna/CreateView.vue'),
+    meta: { role: 'super' }
+  },
+  {
     path: '/admin/dashboard/daftar-pengguna/update/:id',
     name: 'daftar-pengguna.update',
     component: () =>
       import(/* webpackChunkName: "home" */ '../views/Admin/DaftarPengguna/UpdateView.vue'),
     meta: { role: 'admin' }
+  },
+  {
+    path: '/super/dashboard/daftar-pengguna/update/:id',
+    name: 'daftar-pengguna-super.update',
+    component: () =>
+      import(/* webpackChunkName: "home" */ '../views/Super/DaftarPengguna/UpdateView.vue'),
+    meta: { role: 'super' }
   },
 
   {
@@ -103,11 +144,25 @@ const routes = [
     meta: { role: 'admin' }
   },
   {
+    path: '/super/dashboard/kelas',
+    name: 'kelas-super',
+    component: () =>
+      import(/* webpackChunkName: "home" */ '../views/Super/Kelas/IndexView.vue'),
+    meta: { role: 'super' }
+  },
+  {
     path: '/admin/dashboard/kelas/create',
     name: 'kelas.create',
     component: () =>
       import(/* webpackChunkName: "home" */ '../views/Admin/Kelas/CreateView.vue'),
     meta: { role: 'admin' }
+  },
+  {
+    path: '/super/dashboard/kelas/create',
+    name: 'kelas-super.create',
+    component: () =>
+      import(/* webpackChunkName: "home" */ '../views/Super/Kelas/CreateView.vue'),
+    meta: { role: 'super' }
   },
   {
     path: '/admin/dashboard/kelas/update/:id',
@@ -117,11 +172,25 @@ const routes = [
     meta: { role: 'admin' }
   },
   {
+    path: '/super/dashboard/kelas/update/:id',
+    name: 'kelas-super.update',
+    component: () =>
+      import(/* webpackChunkName: "home" */ '../views/Super/Kelas/UpdateView.vue'),
+    meta: { role: 'super' }
+  },
+  {
     path: '/admin/dashboard/jurusan',
     name: 'jurusan',
     component: () =>
       import(/* webpackChunkName: "home" */ '../views/Admin/Jurusan/IndexView.vue'),
     meta: { role: 'admin' }
+  },
+  {
+    path: '/super/dashboard/jurusan',
+    name: 'jurusan-super',
+    component: () =>
+      import(/* webpackChunkName: "home" */ '../views/Super/Jurusan/IndexView.vue'),
+    meta: { role: 'super' }
   },
   {
     path: '/admin/dashboard/jurusan/create',
@@ -131,11 +200,25 @@ const routes = [
     meta: { role: 'admin' }
   },
   {
+    path: '/super/dashboard/jurusan/create',
+    name: 'jurusan-super.create',
+    component: () =>
+      import(/* webpackChunkName: "home" */ '../views/Super/Jurusan/CreateView.vue'),
+    meta: { role: 'super' }
+  },
+  {
     path: '/admin/dashboard/jurusan/update/:id',
     name: 'jurusan.update',
     component: () =>
       import(/* webpackChunkName: "home" */ '../views/Admin/Jurusan/UpdateView.vue'),
     meta: { role: 'admin' }
+  },
+  {
+    path: '/super/dashboard/jurusan/update/:id',
+    name: 'jurusan=super.update',
+    component: () =>
+      import(/* webpackChunkName: "home" */ '../views/Super/Jurusan/UpdateView.vue'),
+    meta: { role: 'super' }
   },
   {
     path: '/admin/dashboard/vendor',
@@ -145,11 +228,25 @@ const routes = [
     meta: { role: 'admin' }
   },
   {
+    path: '/super/dashboard/vendor',
+    name: 'vendor-super',
+    component: () =>
+      import(/* webpackChunkName: "home" */ '../views/Super/Vendor/IndexView.vue'),
+    meta: { role: 'super' }
+  },
+  {
     path: '/admin/dashboard/vendor/create',
     name: 'vendor.create',
     component: () =>
       import(/* webpackChunkName: "home" */ '../views/Admin/Vendor/CreateView.vue'),
     meta: { role: 'admin' }
+  },
+  {
+    path: '/super/dashboard/vendor/create',
+    name: 'vendor-super.create',
+    component: () =>
+      import(/* webpackChunkName: "home" */ '../views/Super/Vendor/CreateView.vue'),
+    meta: { role: 'super' }
   },
   {
     path: '/admin/dashboard/vendor/update/:id',
@@ -159,20 +256,19 @@ const routes = [
     meta: { role: 'admin' }
   },
   {
+    path: '/super/dashboard/vendor/update/:id',
+    name: 'vendor-super.update',
+    component: () =>
+      import(/* webpackChunkName: "home" */ '../views/Super/Vendor/UpdateView.vue'),
+    meta: { role: 'super' }
+  },
+  {
     path: '/admin/dashboard/laporan-barang',
     name: 'laporan-barang',
     component: () =>
       import(/* webpackChunkName: "home" */ '../views/Admin/Laporan/IndexBarang.vue'),
     meta: { role: 'admin' }
   },
-  {
-    path: '/admin/dashboard/print-laporan',
-    name: 'PrintLaporan',
-    component: () =>
-      import(/* webpackChunkName: "home" */ '../views/Admin/Laporan/PrintLaporan.vue'),
-    meta: { role: 'admin' }
-  },
-  
   {
     path: '/super/dashboard/laporan-barang',
     name: 'laporan-barang-super',

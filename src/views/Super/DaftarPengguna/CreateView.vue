@@ -4,7 +4,7 @@ import { ref } from 'vue';
 import { useRouter } from 'vue-router';
 import DefaultCard from '@/components/Forms/DefaultCard.vue';// Sesuaikan dengan lokasi komponen
 import InputGroup from '@/components/Auths/InputGroup.vue'; // Sesuaikan dengan lokasi komponen
-import DefaultLayoutAdmin from '@/layouts/DefaultLayoutAdmin.vue';
+import DefaultLayoutSuper from '@/layouts/DefaultLayoutSuper.vue';
 const router = useRouter();
 
 // Form state
@@ -47,7 +47,7 @@ const handleSubmit = async () => {
     console.log(response.data);
 
     // Redirect to the index page
-    router.push({ name: 'daftar-pengguna' });
+    router.push({ name: 'daftar-pengguna-super' });
   } catch (error) {
     // Handle validation or other errors
     if (error.response && error.response.data.errors) {
@@ -61,7 +61,7 @@ const handleSubmit = async () => {
 </script>
 
 <template>
-  <DefaultLayoutAdmin>
+  <DefaultLayoutSuper>
     <div class="grid">
       <div class="flex flex-col gap-9">
         <!-- Form Start -->
@@ -134,7 +134,7 @@ const handleSubmit = async () => {
         <!-- Form End -->
       </div>
     </div>
-  </DefaultLayoutAdmin>
+  </DefaultLayoutSuper>
 </template>
 
 <style scoped>

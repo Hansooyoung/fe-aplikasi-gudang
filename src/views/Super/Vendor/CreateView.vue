@@ -38,7 +38,7 @@ const handleSubmit = async () => {
     console.log(response.data);
 
     // Redirect to the index page
-    router.push({ name: 'vendor' }); // Adjust the redirect to the correct route
+    router.push({ name: 'vendor-super' }); // Adjust the redirect to the correct route
   } catch (error) {
     // Handle validation or other errors
     if (error.response && error.response.data.errors) {

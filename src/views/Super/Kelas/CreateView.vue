@@ -37,7 +37,7 @@ const handleSubmit = async () => {
     console.log(response.data);
 
     // Redirect to the kelas index page
-    router.push({ name: 'kelas' }); // Redirect sesuai dengan route kelas
+    router.push({ name: 'kelas-super' }); // Redirect sesuai dengan route kelas
   } catch (error) {
     // Handle validation or other errors
     if (error.response && error.response.data.errors) {
