@@ -121,7 +121,7 @@ onMounted(() => {
               </td>
               <td class="py-5 px-4">
                 <div class="flex items-center space-x-3.5">
-                  <button @click="$router.push({ name: 'user-super.update', params: { id: user.id } })" class="hover:text-primary ">Edit</button>
+                  <button @click="$router.push({ name: 'daftar-pengguna.update', params: { id: user.id } })" class="hover:text-primary ">Edit</button>
                   <button @click="confirmDelete(user)" class="hover:text-primary">Delete</button>
                 </div>
               </td>

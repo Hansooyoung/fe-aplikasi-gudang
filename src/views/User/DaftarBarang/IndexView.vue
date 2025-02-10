@@ -191,7 +191,7 @@ watch([searchKeyword, selectedJenisBarang, selectedVendor], () => {
               </td>
               <td class="py-5 px-4">
                 <div class="flex items-center space-x-3.5">
-                  <button @click="$router.push({ name: 'barang.update', params: { kode_barang: barang.kode_barang } })" class="hover:text-primary">Edit</button>
+                  <button @click="$router.push({ name: 'daftar-barang.update', params: { kode_barang: barang.kode_barang } })" class="hover:text-primary">Edit</button>
                   <button @click="confirmDelete(barang)" class="hover:text-primary">Delete</button>
                 </div>
               </td>
